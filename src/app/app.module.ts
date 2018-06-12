@@ -5,13 +5,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { Tabs } from './tabs/tabs.component';
 import { Tab } from './tabs/tab/tab.component';
+import { AltTabs } from './alt-tabs/alt-tabs.component';
+import { AltTab } from './alt-tabs/alt-tab/alt-tab.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     Tabs,
-    Tab
+    Tab,
+    AltTabs,
+    AltTab
   ],
   imports: [
     BrowserModule

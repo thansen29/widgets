@@ -20,8 +20,6 @@ export class Tabs implements OnInit {
     }
 
     this.tabs.push(tab);
-    console.log(this.tabs);
-    
   }
 
   selectTab(tab: Tab) {

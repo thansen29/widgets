@@ -8,3 +8,31 @@ ul {
 li {
     list-style: none;
 }
+
+.tab-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dotted black;
+}
+
+.tab-item {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.tab-item:hover {
+    cursor: pointer;
+}
+
+.tab-item:first-of-type {
+    border-right: 1px dotted black;
+}
+
+.active {
+    color: red;
+}
+
+.tab-content {
+    padding: 10px;
+}
