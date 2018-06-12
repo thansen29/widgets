@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Item } from './item.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,29 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  items: Item[] = [
+    {
+      name: 'Tom'
+    },
+    {
+      name: 'Chris'
+    },
+    {
+      name: 'Matt'
+    },
+    {
+      name: 'Jay'
+    },
+    {
+      name: 'Amanda'
+    },
+  ]
+
+  constructor() {}
+
+  onChange(item: Item) {
+    console.log('Now you can do something in this parent component with it');
+  }
+
+
 }

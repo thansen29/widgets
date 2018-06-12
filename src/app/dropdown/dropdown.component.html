@@ -1,0 +1,27 @@
+<section class="dropdown-wrapper">
+  <section 
+    class="dropdown-section"
+    tabindex="0"
+    (blur)="blurDropdown()">
+
+    <div 
+      class="displayed-item"
+      [ngClass]="{ open: isOpen }"
+      (click)="toggleOpen()">
+      {{ selected }}
+    </div>
+
+    <ul 
+      class="list-content"
+      *ngIf="isOpen">
+      <li
+        class="dropdown-item"
+        *ngFor="let item of items"
+        (click)="selectItem(item)">
+        {{ item.name }}
+      </li>
+    </ul>
+
+  </section>
+
+</section>

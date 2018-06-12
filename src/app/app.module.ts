@@ -7,6 +7,7 @@ import { Tabs } from './tabs/tabs.component';
 import { Tab } from './tabs/tab/tab.component';
 import { AltTabs } from './alt-tabs/alt-tabs.component';
 import { AltTab } from './alt-tabs/alt-tab/alt-tab.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { AltTab } from './alt-tabs/alt-tab/alt-tab.component';
     Tabs,
     Tab,
     AltTabs,
-    AltTab
+    AltTab,
+    DropdownComponent
   ],
   imports: [
     BrowserModule
